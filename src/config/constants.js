@@ -1,0 +1,52 @@
+// HTTP Status Codes
+const HTTP_STATUS = {
+  OK: 200,
+  CREATED: 201,
+  BAD_REQUEST: 400,
+  UNAUTHORIZED: 401,
+  FORBIDDEN: 403,
+  NOT_FOUND: 404,
+  INTERNAL_SERVER_ERROR: 500,
+};
+
+// User Roles
+const USER_ROLES = {
+  ADMIN: "admin",
+  STAFF: "staff",
+};
+
+// Rate Limiting
+const RATE_LIMIT = {
+  WINDOW_MS: 15 * 60 * 1000, 
+  MAX_REQUESTS: 100,
+};
+
+// JWT Configuration
+const JWT_CONFIG = {
+  ALGORITHM: "HS256",
+};
+
+// Pagination
+const PAGINATION = {
+  DEFAULT_PAGE: 1,
+  DEFAULT_LIMIT: 10,
+  MAX_LIMIT: 100,
+};
+
+// Validation
+const VALIDATION = {
+  USERNAME_MIN_LENGTH: 3,
+  USERNAME_MAX_LENGTH: 30,
+  PASSWORD_MIN_LENGTH: 6,
+  CARE_UNIT_MAX_LENGTH: 100,
+  DESCRIPTION_MAX_LENGTH: 500,
+};
+
+export {
+  HTTP_STATUS,
+  USER_ROLES,
+  RATE_LIMIT,
+  JWT_CONFIG,
+  PAGINATION,
+  VALIDATION,
+}; 
